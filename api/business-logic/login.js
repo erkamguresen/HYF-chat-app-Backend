@@ -24,13 +24,10 @@ const loginManager = {
       throw new Error('Invalid username or password !');
     }
 
-    console.log('before token');
     const token = createToken(existingUser);
 
-    console.log(token);
-
     return {
-      token: Object.keys(token)[0],
+      token: token,
       username,
       message: `Session created for user ${username}`,
     };
