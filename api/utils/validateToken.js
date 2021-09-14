@@ -1,23 +1,18 @@
-const persistentDataAccess = require('../data-access/persistent');
-const usersStore = persistentDataAccess('users');
+const jwt = require('jsonwebtoken');
+const JWT_SECRET = require('../../config/tokens');
 
 const isValidToken = async (token, username) => {
-  const registeredUsers = await usersStore.all();
-  const user = registeredUsers.find((user) => user.username === username);
-
-  if (!user || !user.token) {
+  try {
+    const decoded = jwt.verify(token, JWT_SECRET);
+    console.log(decoded);
+    if (decoded.username === username) {
+      return true;
+    } else {
+      throw new Error('Invalid token');
+    }
+  } catch (error) {
     return false;
   }
-
-  if (!user.token[token] || Object.keys(user.token)[0].localeCompare(token)) {
-    return false;
-  }
-
-  if (user.token[token].createdAt + user.token[token].expiresIn < Date.now()) {
-    return false;
-  }
-
-  return true;
 };
 
 module.exports = isValidToken;

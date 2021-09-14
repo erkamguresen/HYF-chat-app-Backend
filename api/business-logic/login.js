@@ -24,10 +24,10 @@ const loginManager = {
       throw new Error('Invalid username or password !');
     }
 
+    console.log('before token');
     const token = createToken(existingUser);
-    existingUser.token = token;
 
-    const update = await usersStore.update(existingUser.id, existingUser);
+    console.log(token);
 
     return {
       token: Object.keys(token)[0],
