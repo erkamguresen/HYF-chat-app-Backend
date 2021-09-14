@@ -64,7 +64,19 @@ const registerUpdates = (headerEl, channelListEl, messagesEl) => {
     const channels = await fetchChannels();
     channelListEl.innerHTML = getChannelListInnerHtml(channels);
     messagesEl.innerHTML = getMessagesInnerHtml(messages);
-  }, 500);
+  }, 1000);
+};
+
+const updateChannelsAndMessages = async (
+  headerEl,
+  channelListEl,
+  messagesEl
+) => {
+  headerEl.innerHTML = getHeaderInnerHtml();
+  const messages = await fetchMessagesForChannel(state.currentChannelId);
+  const channels = await fetchChannels();
+  channelListEl.innerHTML = getChannelListInnerHtml(channels);
+  messagesEl.innerHTML = getMessagesInnerHtml(messages);
 };
 
 const getChannelListInnerHtml = (channels) => {

@@ -5,8 +5,8 @@
       "username": "erkam",
       "password": "c0067d4af4e87f00dbac63b6156828237059172d1bbeac67427345d6a9fda484",
       "token": {
-        "8bd6c5bf0f31caf0847794e5de6a96d9227ba2ad740a98093ebfbf0c612eeb43": {
-          "createdAt": 1631621676996,
+        "4cbe76d93a8121953ee38d407525332a9034cbd5e3d2405dcfe35059e6b1c6dd": {
+          "createdAt": 1631630879708,
           "expiresIn": 604800000
         }
       }
@@ -123,6 +123,97 @@
       "id": "6140922d9a057d9300000001",
       "user": "erkam",
       "date": "2021-09-14T12:14:37.559Z",
+      "channelId": "undefined"
+    },
+    {
+      "text": "",
+      "id": "6140aeec7cf3e76000000001",
+      "user": "erkam",
+      "date": "2021-09-14T14:17:16.927Z",
+      "channelId": "undefined"
+    },
+    {
+      "text": "",
+      "id": "6140af8d78a73ab600000001",
+      "user": "erkam",
+      "date": "2021-09-14T14:19:57.494Z",
+      "channelId": "undefined"
+    },
+    {
+      "text": "",
+      "id": "6140aff37b00030d01000001",
+      "user": "erkam",
+      "date": "2021-09-14T14:21:39.336Z",
+      "channelId": "undefined"
+    },
+    {
+      "text": "",
+      "id": "6140b02e6555af3701000001",
+      "user": "erkam",
+      "date": "2021-09-14T14:22:38.581Z",
+      "channelId": "undefined"
+    },
+    {
+      "text": "",
+      "id": "6140b03ced2d795301000001",
+      "user": "erkam",
+      "date": "2021-09-14T14:22:52.066Z",
+      "channelId": "undefined"
+    },
+    {
+      "text": "",
+      "id": "6140b05cf9ea857d01000001",
+      "user": "erkam",
+      "date": "2021-09-14T14:23:24.584Z",
+      "channelId": "undefined"
+    },
+    {
+      "text": "",
+      "id": "6140b2fcd96efc0502000001",
+      "user": "erkam",
+      "date": "2021-09-14T14:34:36.969Z",
+      "channelId": "undefined"
+    },
+    {
+      "text": "",
+      "id": "6140b3a77c01b67002000001",
+      "user": "erkam",
+      "date": "2021-09-14T14:37:27.840Z",
+      "channelId": "undefined"
+    },
+    {
+      "text": "",
+      "id": "6140b449e89fbdbb02000001",
+      "user": "erkam",
+      "date": "2021-09-14T14:40:09.127Z",
+      "channelId": "undefined"
+    },
+    {
+      "text": "",
+      "id": "6140b5a38b03556603000001",
+      "user": "erkam",
+      "date": "2021-09-14T14:45:55.758Z",
+      "channelId": "undefined"
+    },
+    {
+      "text": "",
+      "id": "6140b5bea6cd198503000001",
+      "user": "erkam",
+      "date": "2021-09-14T14:46:22.819Z",
+      "channelId": "undefined"
+    },
+    {
+      "text": "",
+      "id": "6140b5f142c8c4a403000001",
+      "user": "erkam",
+      "date": "2021-09-14T14:47:13.981Z",
+      "channelId": "undefined"
+    },
+    {
+      "text": "",
+      "id": "6140b61f576901b203000001",
+      "user": "erkam",
+      "date": "2021-09-14T14:47:59.767Z",
       "channelId": "undefined"
     }
   ]
