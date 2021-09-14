@@ -1,0 +1,122 @@
+{
+  "users": [
+    {
+      "id": "613f4a72f5a832aa04000001",
+      "username": "erkam",
+      "password": "c0067d4af4e87f00dbac63b6156828237059172d1bbeac67427345d6a9fda484",
+      "token": {
+        "69aa12caaf797059abf2af85294cefd32cb08585500be2661d3aa631879170ae": {
+          "createdAt": 1631566088934,
+          "expiresIn": 604800000
+        }
+      }
+    },
+    {
+      "id": "613fa5fc9b3ab6f304000001",
+      "username": "a",
+      "password": "8a5e1d339fafc39350fd8cf1d7ca7982091c27f6b77f75bd4ddab3df425b4f8c"
+    },
+    {
+      "id": "613fa60600d5ee0105000002",
+      "username": "aqq",
+      "password": "cd1984b144233807c63bcac47a053408ef4eeadb17854077d8ba5942c6a2b846"
+    }
+  ],
+  "channels": [
+    {
+      "id": "6119132ba2e3627c07000001",
+      "name": "welcome"
+    },
+    {
+      "id": "61191b0a3f8b5fde1d000001",
+      "name": "sunday class"
+    },
+    {
+      "id": "61224defde5c815c11000001",
+      "name": "hobbies"
+    },
+    {
+      "id": "613fb0c69edec58a06000001",
+      "name": "new channel"
+    }
+  ],
+  "messages": [
+    {
+      "text": "First massage",
+      "id": "6119185244da149c17000001",
+      "user": "erkam",
+      "date": "2021-08-15T13:36:18.952Z",
+      "channelId": "6119132ba2e3627c07000001"
+    },
+    {
+      "text": "hi",
+      "id": "61191af8426992561d000001",
+      "user": "joe",
+      "date": "2021-08-15T13:47:36.052Z",
+      "channelId": "6119132ba2e3627c07000001"
+    },
+    {
+      "text": "hi channel",
+      "id": "61191b190df02d3e1e000001",
+      "user": "erkam",
+      "date": "2021-08-15T13:48:09.876Z",
+      "channelId": "61191b0a3f8b5fde1d000001"
+    },
+    {
+      "text": "hi again",
+      "id": "613dfc968e37c0a805000001",
+      "user": "er",
+      "date": "2021-09-12T13:11:50.115Z",
+      "channelId": "61191b0a3f8b5fde1d000001"
+    },
+    {
+      "text": "hi",
+      "id": "613e0a99c6d1fce408000001",
+      "user": "a",
+      "date": "2021-09-12T14:11:37.331Z",
+      "channelId": "61224defde5c815c11000001"
+    },
+    {
+      "text": "WOW",
+      "id": "613e0c9a6367922009000001",
+      "user": "1",
+      "date": "2021-09-12T14:20:10.361Z",
+      "channelId": "61191b0a3f8b5fde1d000001"
+    },
+    {
+      "text": "Hello everyone, welcome to the new channel..",
+      "id": "613fb0d8673e109906000001",
+      "user": "erkam",
+      "date": "2021-09-13T20:13:12.291Z",
+      "channelId": "613fb0c69edec58a06000001"
+    },
+    {
+      "text": "",
+      "id": "613fb58f168dade506000001",
+      "user": "erkam",
+      "date": "2021-09-13T20:33:19.268Z",
+      "channelId": "undefined"
+    },
+    {
+      "text": "",
+      "id": "613fb64545ce293307000001",
+      "user": "erkam",
+      "date": "2021-09-13T20:36:21.417Z",
+      "channelId": "undefined"
+    },
+    {
+      "text": "",
+      "id": "613fb73f4ec7606007000001",
+      "user": "erkam",
+      "date": "2021-09-13T20:40:31.517Z",
+      "channelId": "undefined"
+    },
+    {
+      "text": "",
+      "id": "613fb90941a7cde607000001",
+      "user": "erkam",
+      "date": "2021-09-13T20:48:09.032Z",
+      "channelId": "undefined"
+    }
+  ]
+}
