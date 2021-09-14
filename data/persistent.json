@@ -3,23 +3,7 @@
     {
       "id": "613f4a72f5a832aa04000001",
       "username": "erkam",
-      "password": "c0067d4af4e87f00dbac63b6156828237059172d1bbeac67427345d6a9fda484",
-      "token": {
-        "4cbe76d93a8121953ee38d407525332a9034cbd5e3d2405dcfe35059e6b1c6dd": {
-          "createdAt": 1631630879708,
-          "expiresIn": 604800000
-        }
-      }
-    },
-    {
-      "id": "613fa5fc9b3ab6f304000001",
-      "username": "a",
-      "password": "8a5e1d339fafc39350fd8cf1d7ca7982091c27f6b77f75bd4ddab3df425b4f8c"
-    },
-    {
-      "id": "613fa60600d5ee0105000002",
-      "username": "aqq",
-      "password": "cd1984b144233807c63bcac47a053408ef4eeadb17854077d8ba5942c6a2b846"
+      "password": "c0067d4af4e87f00dbac63b6156828237059172d1bbeac67427345d6a9fda484"
     }
   ],
   "channels": [

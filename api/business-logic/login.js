@@ -24,7 +24,7 @@ const loginManager = {
       throw new Error('Invalid username or password !');
     }
 
-    const token = createToken();
+    const token = createToken(existingUser);
     existingUser.token = token;
 
     const update = await usersStore.update(existingUser.id, existingUser);
