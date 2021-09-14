@@ -5,8 +5,8 @@
       "username": "erkam",
       "password": "c0067d4af4e87f00dbac63b6156828237059172d1bbeac67427345d6a9fda484",
       "token": {
-        "69aa12caaf797059abf2af85294cefd32cb08585500be2661d3aa631879170ae": {
-          "createdAt": 1631566088934,
+        "8bd6c5bf0f31caf0847794e5de6a96d9227ba2ad740a98093ebfbf0c612eeb43": {
+          "createdAt": 1631621676996,
           "expiresIn": 604800000
         }
       }
@@ -116,6 +116,13 @@
       "id": "613fb90941a7cde607000001",
       "user": "erkam",
       "date": "2021-09-13T20:48:09.032Z",
+      "channelId": "undefined"
+    },
+    {
+      "text": "",
+      "id": "6140922d9a057d9300000001",
+      "user": "erkam",
+      "date": "2021-09-14T12:14:37.559Z",
       "channelId": "undefined"
     }
   ]
