@@ -4,6 +4,11 @@
       "id": "613f4a72f5a832aa04000001",
       "username": "erkam",
       "password": "c0067d4af4e87f00dbac63b6156828237059172d1bbeac67427345d6a9fda484"
+    },
+    {
+      "id": "6141fae3a4cc2e8800000001",
+      "username": "admin",
+      "password": "fb001dfcffd1c899f3297871406242f097aecf1a5342ccf3ebcd116146188e4b"
     }
   ],
   "channels": [
@@ -53,7 +58,6 @@
       "date": "2021-09-12T13:11:50.115Z",
       "channelId": "61191b0a3f8b5fde1d000001"
     },
-
     {
       "text": "WOW",
       "id": "613e0c9a6367922009000001",
@@ -68,19 +72,27 @@
       "date": "2021-09-13T20:13:12.291Z",
       "channelId": "613fb0c69edec58a06000001"
     },
-    {
-      "text": "",
-      "id": "6140df5eedb5b27605000001",
-      "user": "erkam",
-      "date": "2021-09-14T17:43:58.391Z",
-      "channelId": "undefined"
-    },
+
     {
       "text": "Thanks for sunday classes, it means a lot",
       "id": "6140df857b5be98405000001",
       "user": "erkam",
       "date": "2021-09-14T17:44:37.644Z",
       "channelId": "61191b0a3f8b5fde1d000001"
+    },
+    {
+      "text": "Welcome to hobbies channel",
+      "id": "6142041da4cc2e8800000003",
+      "user": "admin",
+      "date": "2021-09-15T14:33:01.509Z",
+      "channelId": "61224defde5c815c11000001"
+    },
+    {
+      "text": "here we all talk about hobbies",
+      "id": "61420430a4cc2e8800000004",
+      "user": "admin",
+      "date": "2021-09-15T14:33:20.988Z",
+      "channelId": "61224defde5c815c11000001"
     }
   ]
 }

@@ -1,6 +1,7 @@
 import { postRegisterUser } from '../api-calls/calls.js';
 
 import { registerPageComponent } from '../components/register-page.component.js';
+import { loginPageComponent } from '../components/login-page.component.js';
 
 export async function registerUser(event) {
   event.preventDefault();
@@ -44,12 +45,27 @@ export async function registerUser(event) {
 
   if (response.username) {
     const successDisplay = document.getElementById('success');
-    successDisplay.innerHTML = `<i class="fa fa-check"></i> User <span>${response.username}</span> is successfully added!`;
+    successDisplay.innerHTML = `<i class="fa fa-check"></i> User <span>${response.username}</span> is successfully added!
+    Redirecting to login page.`;
     successDisplay.style.display = 'block';
 
     setTimeout(() => {
       successDisplay.innerHTML = '';
       successDisplay.style.display = 'none';
+    }, 3000);
+
+    event.target[0].value = '';
+    event.target[1].value = '';
+    event.target[2].value = '';
+
+    setTimeout(() => {
+      const root = document.getElementById('root');
+      while (root.firstChild) {
+        root.removeChild(root.firstChild);
+      }
+      const loginPage = loginPageComponent();
+
+      root.appendChild(loginPage);
     }, 3000);
   }
 }

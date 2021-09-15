@@ -50,7 +50,7 @@ export async function loginUser(event) {
     }, 3000);
   }
 
-  console.log(response);
+  // console.log(response);
 
   // auth procedures
   state.token = response.token;
@@ -61,7 +61,7 @@ export async function loginUser(event) {
   if (state.isSignedIn) {
     startApplication();
   }
-  console.log('state', state);
+  // console.log('state', state);
 }
 
 export function loginUserLink(event) {
