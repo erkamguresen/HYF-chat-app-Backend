@@ -7,7 +7,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=production PORT=3000 STATIC_DIR=client DATA_DIR=data node index.js",
+    "start": "NODE_ENV=production STATIC_DIR=client DATA_DIR=data node index.js",
     "dev": "node index.js"
   },
   "author": "",
@@ -19,8 +19,6 @@
     "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
     "objectid": "^3.2.1",
-    "react-scripts": "^4.0.3",
-    "serve": "^12.0.1",
     "tv4": "^1.3.0"
   },
   "devDependencies": {
