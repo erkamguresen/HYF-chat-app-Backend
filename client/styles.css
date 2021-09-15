@@ -481,6 +481,23 @@ main {
 }
 
 /* login & register page */
+h1 {
+  font-size: 2.5rem;
+  margin: 20px 0 10px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin: 0 0 15px;
+  font-weight: bolder;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 0 0 10px;
+  font-weight: normal;
+}
 
 form {
   border: 1px solid #e0e0e0;

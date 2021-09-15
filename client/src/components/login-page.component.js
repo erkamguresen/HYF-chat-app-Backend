@@ -7,51 +7,63 @@ export const loginPageComponent = () => {
   container.className = 'flex-container flex-column';
 
   container.innerHTML = `
-      <div id="error">
-        <i class="fa fa-times-circle"></i> <span id="error-text"></span>
-      </div>
-      <div id="success">
-        <span id="success-tex"></span>
-      </div>
-      <form action="" id="login-form">
-        <h3>Login to HYF Chat App</h3>
-        <div>
-          <label for="username">Username* : </label>
-          <input
-            type="text"
-            id="username"
-            placeholder="Username"
-            name="username"
-            required
-          />
-        </div>
-        <div>
-          <label for="password">Password * : </label>
-          <input
-            type="password"
-            id="password"
-            placeholder="Password"
-            name="password"
-            required
-          />
-        </div>
+  <h1>
+    Welcome to
+    <img src="../../favicon-32x32.png" alt="Hack Your Future Belgium" />
+    Chat App
+  </h1>
+  <h2>Backend Project Student Demo</h2>
+  <br />
+  <h3>Please login to Continue</h3>
 
-        <div class="d-flex justify-content-between">
-          <input
-            type="button"
-            value="Register"
-            id="register-link-btn"
-            class="btn btn-outline-secondary"
-          />
+  <!-- success & error panels -->
+  <div id="error">
+    <i class="fa fa-times-circle"></i> <span id="error-text"></span>
+  </div>
+  <div id="success">
+    <span id="success-tex"></span>
+  </div>
 
-          <input
-            type="submit"
-            value="Submit"
-            id="login-submit-btn"
-            class="btn btn-outline-primary"
-          />
-        </div>
-      </form>
+  <!-- login form -->
+  <form action="" id="login-form">
+    <div class="input-container">
+      <div>
+        <input
+          type="text"
+          id="username"
+          placeholder="Username*"
+          name="username"
+          required
+        />
+      </div>
+      <div>
+        <input
+          type="password"
+          id="password"
+          placeholder="Password*"
+          name="password"
+          required
+        />
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-between">
+      <input
+        type="button"
+        value="Register"
+        id="register-link-btn"
+        class="btn btn-outline-secondary"
+      />
+
+      <input
+        type="submit"
+        value="Submit"
+        id="login-submit-btn"
+        class="btn btn-outline-primary"
+      />
+    </div>
+  </form>
+
   `;
 
   container.querySelector('#login-form').addEventListener('submit', loginUser);
