@@ -1,10 +1,13 @@
 {
-  "name": "backend-starter",
+  "name": "hyf-chat-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "a backend focused chat application project",
+  "engines": {
+    "node": "16.1.0"
+  },
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=production PORT=3000 STATIC_DIR=client DATA_DIR=data node index.js",
+    "start": "node index.js",
     "dev": "nodemon index.js",
     "document:client": "node ./dev-scripts/document client",
     "document:api": "node ./dev-scripts/document api",
