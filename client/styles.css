@@ -563,3 +563,10 @@ form label {
   font-style: italic;
   margin: 0 0.75rem;
 }
+
+#success p {
+  margin: 1rem;
+}
+#success i {
+  margin-right: 1.25rem;
+}

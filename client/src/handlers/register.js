@@ -45,8 +45,8 @@ export async function registerUser(event) {
 
   if (response.username) {
     const successDisplay = document.getElementById('success');
-    successDisplay.innerHTML = `<i class="fa fa-check"></i> User <span>${response.username}</span> is successfully added!
-    Redirecting to login page.`;
+    successDisplay.innerHTML = `<p><i class="fa fa-check"></i>User <span>${response.username}</span> is successfully added!</p>
+    <p><i class="fa fa-arrow-circle-o-left"></i>Redirecting to login page.</p>`;
     successDisplay.style.display = 'block';
 
     setTimeout(() => {

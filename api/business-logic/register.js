@@ -7,7 +7,7 @@ const hashPassword = require('../utils/hashPassword');
 
 const registerManager = {
   register: async function (username, password) {
-    const hashedPassword = hashPassword(password);
+    const hashedPassword = hashPassword(`${username}.${password}`);
     const id = objectId().toString();
     const user = {
       id: id,

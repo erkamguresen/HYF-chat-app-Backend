@@ -11,7 +11,7 @@ const loginManager = {
       res.status(400).send('Missing username or password');
       return;
     }
-    const hashedPassword = hashPassword(password);
+    const hashedPassword = hashPassword(`${username}.${password}`);
     const user = { username: username, password: hashedPassword };
 
     const registeredUsers = await usersStore.all();
