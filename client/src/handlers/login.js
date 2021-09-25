@@ -1,4 +1,4 @@
-import { postLoginUser } from '../api-calls/calls.js';
+import { fetchChannels, postLoginUser } from '../api-calls/calls.js';
 import { homePage } from '../components/home-page.component.js';
 import { loginPageComponent } from '../components/login-page.component.js';
 
