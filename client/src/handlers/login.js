@@ -50,18 +50,14 @@ export async function loginUser(event) {
     }, 3000);
   }
 
-  // console.log(response);
-
   // auth procedures
   state.token = response.token;
   state.username = response.username;
   state.isSignedIn = true;
 
-  // TODO redirect to the chat page
   if (state.isSignedIn) {
     startApplication();
   }
-  // console.log('state', state);
 }
 
 export function loginUserLink(event) {
@@ -81,6 +77,15 @@ export function loginUserLink(event) {
 async function startApplication() {
   const root = document.getElementById('root');
   root.innerHTML = '';
+
+  //set default channel to first channel in list
+  const channels = await fetchChannels();
+
+  if (channels.length > 0) {
+    state.currentChannelId = channels[0].id;
+    state.currentChannelName = channels[0].name;
+  }
+
   const res = await homePage();
   root.append(res);
 }
