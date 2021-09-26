@@ -39,7 +39,7 @@ const channelManager = {
     }
 
     channel.id = channel.id.toString();
-    // console.log('channels / id', channel.id);
+
     return channel;
   },
 
@@ -48,10 +48,8 @@ const channelManager = {
 
     channels.forEach((channel) => {
       channel.id = channel._id.toString();
-      console.log(channel);
     });
 
-    console.log('f4 channels', channels);
     return channels;
   },
 };

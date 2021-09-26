@@ -4,11 +4,9 @@ const messageStore = dataAccess('Messages');
 
 const messageManager = {
   createMessage: async (user, messageContent, channelId) => {
-    // const id = objectId().toString();
-
     const message = {
       text: messageContent,
-      // id: id,
+
       user,
       date: new Date(),
       channelId,
@@ -40,10 +38,6 @@ const messageManager = {
   },
   getMessagesForChannel: async (channelId) => {
     const messages = await messageStore.getAll({ channelId });
-
-    console.log('messages', messages);
-
-    console.log(channelId);
 
     const filteredMessages = messages.filter(
       (message) => message.channelId === channelId
