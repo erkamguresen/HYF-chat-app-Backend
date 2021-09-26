@@ -1,28 +1,23 @@
-const objectId = require('objectid');
+const dataAccess = require('../data-access/mangodbAccess');
 
-const persistentDataAccess = require('../data-access/persistent');
-
-const messageStore = persistentDataAccess('messages');
+const messageStore = dataAccess('Messages');
 
 const messageManager = {
   createMessage: async (user, messageContent, channelId) => {
-
-    const id = objectId().toString();
+    // const id = objectId().toString();
 
     const message = {
       text: messageContent,
-      id: id,
+      // id: id,
       user,
       date: new Date(),
       channelId,
     };
 
-
-    await messageStore.create(message);
+    await messageStore.insert(message);
     return message;
   },
   updateMessage: async (message) => {
-
     const success = await messageStore.update(message.id, message);
 
     if (!success) {
@@ -32,26 +27,30 @@ const messageManager = {
     return message;
   },
   removeMessage: async (messageId) => {
-    const success = await messageStore.remove(messageId);
+    const success = await messageStore.delete(messageId);
     return success;
   },
   getMessage: async (messageId) => {
-    return await messageStore.all().find((message) => message.id === messageId);
-
+    return await messageStore
+      .getAll()
+      .find((message) => message.id === messageId);
   },
   getAllMessages: async () => {
-    return await messageStore.all();
+    return await messageStore.getAll();
   },
   getMessagesForChannel: async (channelId) => {
+    const messages = await messageStore.getAll({ channelId });
 
-    const messages = await messageStore.all();
+    console.log('messages', messages);
+
+    console.log(channelId);
+
     const filteredMessages = messages.filter(
       (message) => message.channelId === channelId
     );
 
     return filteredMessages;
   },
-
 };
 
 module.exports = messageManager;

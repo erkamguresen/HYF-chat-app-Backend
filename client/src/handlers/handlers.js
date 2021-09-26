@@ -1,4 +1,4 @@
-import { state } from "../state/state.js";
+import { state } from '../state/state.js';
 import { postChannel, postMessage } from '../api-calls/calls.js';
 
 export const channelClicked = (event) => {
@@ -7,18 +7,18 @@ export const channelClicked = (event) => {
   }
   state.currentChannelId = event.target.dataset.channelId;
   state.currentChannelName = event.target.dataset.channelName;
-}
+  console.log(state);
+};
 
 export const sendMessage = async () => {
+  await postMessage(document.getElementById('chat-field').value);
 
-  await postMessage(document.getElementById("chat-field").value);
-
-  document.getElementById("chat-field").value = "";
-}
+  document.getElementById('chat-field').value = '';
+};
 
 export const addChannel = async (event) => {
   if (event.target.type === 'submit') {
-    const channelName = prompt("Please enter channel name:");
+    const channelName = prompt('Please enter channel name:');
     await postChannel(channelName);
   }
-}
+};

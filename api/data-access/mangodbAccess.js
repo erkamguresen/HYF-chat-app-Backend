@@ -49,7 +49,7 @@ const persistentDataAccess = (collectionName) => {
 
       return result;
     },
-    //data = { text: 'hi again' }
+    // exp.: data = { text: 'hi again' }
     update: async (id, data) => {
       let result;
       try {

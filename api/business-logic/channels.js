@@ -37,10 +37,22 @@ const channelManager = {
     if (!channel) {
       throw new Error(`Could not find channel with id ${channelId}!`);
     }
+
+    channel.id = channel.id.toString();
+    // console.log('channels / id', channel.id);
     return channel;
   },
+
   getAllChannels: async () => {
-    return await channelStore.getAll();
+    const channels = await channelStore.getAll();
+
+    channels.forEach((channel) => {
+      channel.id = channel._id.toString();
+      console.log(channel);
+    });
+
+    console.log('f4 channels', channels);
+    return channels;
   },
 };
 
