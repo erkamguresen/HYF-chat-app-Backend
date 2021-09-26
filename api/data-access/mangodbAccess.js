@@ -1,8 +1,8 @@
 const { MongoClient } = require('mongodb');
 
 const persistentDataAccess = (collectionName) => {
-  const uri =
-    'mongodb+srv://hyfchatapp:wiKzqPAbVaQtVlWG@mern-stack-tutorial.0prqd.mongodb.net/HYF-Chat?retryWrites=true&w=majority';
+  const uri = MANGODB_URI;
+
   const client = new MongoClient(uri);
 
   const dbName = 'HYF-Chat';

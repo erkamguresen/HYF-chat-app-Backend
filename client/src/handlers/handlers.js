@@ -7,7 +7,6 @@ export const channelClicked = (event) => {
   }
   state.currentChannelId = event.target.dataset.channelId;
   state.currentChannelName = event.target.dataset.channelName;
-  console.log(state);
 };
 
 export const sendMessage = async () => {
