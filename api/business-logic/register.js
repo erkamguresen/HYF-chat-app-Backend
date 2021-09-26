@@ -1,8 +1,3 @@
-// const persistentDataAccess = require('../data-access/persistent');
-// const objectId = require('objectid');
-
-// const usersStore = persistentDataAccess('users');
-
 const dataAccess = require('../data-access/mangodbAccess');
 
 const usersStore = dataAccess('Users');
@@ -12,9 +7,8 @@ const hashPassword = require('../utils/hashPassword');
 const registerManager = {
   register: async function (username, password) {
     const hashedPassword = hashPassword(`${username}.${password}`);
-    // const id = objectId().toString();
+
     const user = {
-      // id: id,
       username: username,
       password: hashedPassword,
     };

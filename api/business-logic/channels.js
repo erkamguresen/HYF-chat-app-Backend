@@ -1,18 +1,10 @@
-// const objectId = require('objectid');
-
-// const persistentDataAccess = require('../data-access/persistent');
-
-// const channelStore = persistentDataAccess('channels');
-
 const dataAccess = require('../data-access/mangodbAccess');
 
 const channelStore = dataAccess('Channels');
 
 const channelManager = {
   createChannel: async (channelName) => {
-    // const id = objectId().toString();
     const channel = {
-      // id: id,
       name: channelName,
     };
     const response = await channelStore.insert(channel);

@@ -1,8 +1,6 @@
-// const persistentDataAccess = require('../data-access/persistent');
 const dataAccess = require('../data-access/mangodbAccess');
 
 const usersStore = dataAccess('Users');
-// const usersStore = persistentDataAccess('users');
 
 const createToken = require('../utils/createToken');
 const hashPassword = require('../utils/hashPassword');
