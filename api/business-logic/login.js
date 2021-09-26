@@ -1,6 +1,8 @@
-const persistentDataAccess = require('../data-access/persistent');
+// const persistentDataAccess = require('../data-access/persistent');
+const dataAccess = require('../data-access/mangodbAccess');
 
-const usersStore = persistentDataAccess('users');
+const usersStore = dataAccess('Users');
+// const usersStore = persistentDataAccess('users');
 
 const createToken = require('../utils/createToken');
 const hashPassword = require('../utils/hashPassword');
@@ -14,7 +16,10 @@ const loginManager = {
     const hashedPassword = hashPassword(`${username}.${password}`);
     const user = { username: username, password: hashedPassword };
 
-    const registeredUsers = await usersStore.all();
+    const registeredUsers = await usersStore.getAll({
+      username: username,
+      password: hashedPassword,
+    });
 
     const existingUser = registeredUsers.find(
       (user) => user.username === username && user.password === hashedPassword
