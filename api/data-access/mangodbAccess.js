@@ -1,9 +1,9 @@
 const { MongoClient } = require('mongodb');
 
 const persistentDataAccess = (collectionName) => {
-  // const uri = process.env.MONGODB_URI;
-  const uri =
-    'mongodb+srv://hyfchatapp:wiKzqPAbVaQtVlWG@mern-stack-tutorial.0prqd.mongodb.net/HYF-Chat?retryWrites=true&w=majority';
+  const uri = process.env.MONGODB_URI;
+  // const uri =
+  // 'mongodb+srv://hyfchatapp:wiKzqPAbVaQtVlWG@mern-stack-tutorial.0prqd.mongodb.net/HYF-Chat?retryWrites=true&w=majority';
 
   const client = new MongoClient(uri);
 
